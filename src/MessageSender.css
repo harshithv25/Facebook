@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&family=Chewy&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@200;300;400;500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,500&family=Ranchers&family=Rochester&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+.messagesender {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    background-color: white;
+    left: 50%;
+    top: 15%;
+    transform: translate(60%);
+    border-radius: 999px;
+    width: 45%;
+    box-shadow: 0 5px 7px -7px rgba(0, 0, 0, 0.99);
+}
+
+.messageSender__top {
+    display: flex;
+    padding: 15px;
+}
+
+.messageSender__top>form {
+    flex: 1;
+    display: flex;
+}
+
+.messageSender__top>form>input {
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background: #eff2f5;
+    font-family: "Chelsea market", cursive;
+    color: #fa2d00;
+    font-size: 0.9em;
+}
+
+.messageSender__top>form>input:nth-child(1) {
+    width: 60%;
+}
+
+.messageSender__top>form>input:nth-child(2) {
+    width: 27%;
+}
+
+.messageSender__top>form>button {
+    display: none;
+}

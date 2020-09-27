@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&family=Chewy&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@200;300;400;500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,500&family=Ranchers&family=Rochester&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+.header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+
+.header__input>input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+    font-family: "Chelsea market", cursive;
+    font-size: 1em;
+}
+
+.header__left>img {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    height: 50px;
+}
+
+.header__left {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__option>.MuiSvgIcon-root {
+    color: gray;
+}
+
+.header__option:hover>.MuiSvgIcon-root {
+    color: lightcoral;
+}
+
+.header__option--active>.MuiSvgIcon-root {
+    color: lightcoral;
+}
+
+.header__option--active {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 30px;
+    border-bottom: 4px solid lightcoral;
+}
+
+.header__option--active:hover {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #eff2f5;
+    border-radius: 10px;
+    padding: 0 30px;
+    border-bottom: 4px solid transparent;
+}
+
+.header__option {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header__option:hover {
+    background-color: #eff2f5;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info>h4 {
+    font-family: "Open sans", cursive;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.MuiAvatar-img {
+    height: 50px;
+    width: 50px;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__input>.MuiSvgIcon-root {
+    color: gray;
+}
+
+.header__input:hover>.MuiSvgIcon-root {
+    color: lightcoral;
+    cursor: pointer;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
